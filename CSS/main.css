@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Raleway|Material+Icons');
+
+h1,
+h2,
+h3,
+h4,
+label {
+    font-family: Bitter, Times, "Times New Roman", serif;
+}
+
+h5 {
+    font-family: Bitter, Times, "Times New Roman", serif;
+}
+
+p,
+a,
+button {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    transition: opacity 0.4s ease-in
+}
+
+.hidden {
+    display: none;
+}
+
+.welcome-message {
+    text-align: center;
+    color: white;
+}
+
+
+/*Welcome Screen*/
+
+.language-buttons {
+    text-align: center;
+}
+
+.language-btn {
+    font-size: 3rem
+}
+
+.welcome-screen {
+    margin-top: 20vh;
+    opacity: 1;
+}
+
+
+/*Item Screen*/
+
+.items-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    display: inline-block;
+}
+
+.total-container {
+    width: 40%;
+}
+
+.list-group-item {
+    font-size: 1.5rem;
+}
+
+.instructions {
+    height: 100vh;
+    width: 60%;
+    float: right;
+}
+
+.instruction-message {
+    text-align: center;
+}
+
+.options-buttons {
+    text-align: center;
+    position: relative;
+    top: 20vh;
+}
+
+.bottom-buttons {
+    text-align: center;
+    position: relative;
+    top: 40vh;
+}
+
+#digits,
+label {
+    font-size: 2rem;
+}
+
+.formBox i {
+    font-size: 3rem;
+    position: relative;
+    top: 2vh;
+}
+
+
+/*Grapefruit Screen*/
+.cards{
+    position: relative;
+    top: 5vh;
+}
+
+.bottom-buttons2 {
+    text-align: center;
+    position: relative;
+    top: 10vh;
+}
+
+.input-group{
+    margin-top: 5vh;
+}
+.keyboard {
+    position: relative;
+    top: 10vh;
+}
+.cardSpacing{
+    margin-top: 1vh;
+}
+.card-body{
+    background-image: linear-gradient(#000, #666);
+}
+
+.formBox{
+text-align: center;    
+}
+#orangeNum{
+    font-size: 2rem;
+}
+
+.KeyboardRow {
+    text-align: center;
+}
+
+.KeyboardKey, .popup{
+    display: inline-block;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    margin-bottom: 5px;
+    -moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+    background: -moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    color: #777777;
+    font-family: arial;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: normal;
+    height: 75px;
+    line-height: 50px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0px #ffffff;
+}
+
+#trueDelete{
+    background-color: white;
+}
+.KeyboardKey:hover {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+    background: -moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+    background-color: #dfdfdf;
+}
+
+.KeyboardKey:active {
+    position: relative;
+    top: 1px;
+}
+.KeyboardKey{
+    max-width: 9%;
+}
+.KeyboardRow .active {
+    background-color: #0c57a8;
+    -moz-box-shadow: inset 0px 1px 0px 0px #9fc5f2;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #9fc5f2;
+    box-shadow: inset 0px 1px 0px 0px #9fc5f2;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #0c57a8), color-stop(1, #043078));
+    background: -moz-linear-gradient( center top, #0c57a8 5%, #043078 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0c57a8', endColorstr='#043078');
+    border: 1px solid #2358a1;
+    display: inline-block;
+    text-shadow: 1px 1px 0px #07294a;
+    color: #ffffff;
+}
+
+.KeyboardRow .active:hover {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #043078), color-stop(1, #0c57a8));
+    background: -moz-linear-gradient( center top, #043078 5%, #0c57a8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#043078', endColorstr='#0c57a8');
+    background-color: #043078;
+}
+
+
+.btn.checkout.btn-primary.btn-lg{
+    float: right;
+    margin: 0.5rem;
+    margin-right: 25%;
+    min-width: 20%;
+    
+}
+.payment{
+    box-sizing: border-box;
+    border: 1px solid #dcdcdc;
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.payment > img {
+    width: 100%;
+    display: inline;
+    min-height: 2rem;
+    margin: none;
+    border-bottom: 1px solid #dcdcdc;
+    
+}
+
+.menubar{
+
+    display: inline-block;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #007bff;
+    border-radius: 6px;
+    display: inline-block;
+    color: #f8f9fa;
+    font-family: arial;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: normal;
+    height: 75px;
+    line-height: 50px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+}
+.menubar > p {
+    
+    z-index: 10000;
+}
+.menubar > img {
+    opacity: 0.7;
+    z-index: 1;
+}
+.selected {
+    background-color: yellow;
+}
+
+.col-md-4.payment > i {
+    height: 100%;
+}
+#continue > p {
+    color: #555;
+}
+
+#Backspace{
+    background-color:crimson;
+}
+
+.overlay{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+}
+
+/*New CSS code*/
+
+.card-body {
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    height: 5rem;
+}
+
+.card-img-top {
+    width: 40%;
+    height: 5rem;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    float: left;
+}
+
+.card-title {
+    font-size: 1rem;
+    margin-left: 5rem;
+}
+
+.row {
+    margin-bottom: 0.5rem;
+}
+
+.whichCabbage,
+.cherries {
+    margin-top: 0.5rem;
+}
+
+.loading {
+    height: 20vh;
+}
+
+.loading span {
+    z-index: 150;
+    font-size: 5rem;
+    position: fixed;
+    top: 15vh;
+    right: 50%;
+}
+
+.loading p {
+    z-index: 150;
+    font-size: 8rem;
+    position: fixed;
+    top: 16vh;
+    left: 3rem;
+    animation: spin 0.8s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-359deg);
+    }
+}
+
+.check{
+    position: relative;
+    top:2rem;
+    margin-bottom: 2rem;
+}
+
+.notSure{
+    position: relative;
+    bottom:0.5rem;
+}
+
+#overlayHelp {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 999; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+#overlayText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color:white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes example {
+    0%   {color:white; opacity: 1;}
+    50%  {color:red; opacity: 0;}
+    100% {color:white; opacity: 1;}
+}
+
+.menubar.greenButton{
+    background-color: #3CB371;
+}
